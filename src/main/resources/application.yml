@@ -1,0 +1,20 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 1000
+      min-spare: 30
+  port: 8080
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        http-only: true
+  shutdown: graceful
+
+knife4j:
+  enable: true
+  setting:
+    language: en-US    # en-US doesn't work
+    # language: en_US  # en_US doesn't work
+    # language: en     # en works
